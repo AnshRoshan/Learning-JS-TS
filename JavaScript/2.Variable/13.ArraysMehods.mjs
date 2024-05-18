@@ -19,10 +19,15 @@ numbers.shift();
 console.log("After shift:", numbers); // Output: [2, 3, 4, 5]
 
 // unshift(): Adds elements to the beginning of the array
+// --it act as as append
 numbers.unshift(1);
 console.log("After unshift:", numbers); // Output: [1, 2, 3, 4, 5]
 
-// splice(): Adds or removes elements from any position in the array
+// splice(start: number, deleteCount: number, ...items: number[]): Adds or removes elements from any position in the array
+// @param start — The zero-based location in the array from which to start removing elements.
+// @param deleteCount — The number of elements to remove.
+// @param items — Elements to insert into the array in place of the deleted elements.
+// @returns — An array containing the elements that were deleted.
 numbers.splice(2, 0, 6, 7); // Inserting 6 and 7 at index 2
 console.log("After splice (insert):", numbers); // Output: [1, 2, 6, 7, 3, 4, 5]
 

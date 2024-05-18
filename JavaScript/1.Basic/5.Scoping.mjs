@@ -3,7 +3,7 @@
 // Global Scope
 const globalVariable = "I'm in the global scope";
 
-function outerFunction() {
+function outerFunction1() {
     // Outer Function Scope
     const outerVariable = "I'm in the outer function scope";
 
@@ -19,10 +19,11 @@ function outerFunction() {
     innerFunction();
 
     // Accessing inner variable from outer function scope (closure)
-    console.log("Outer Function (closure):", innerVariable);
+    // console.log("Outer Function (closure):", innerVariable);
+    // ReferenceError: Can't find variable: innerVariable
 }
 
-outerFunction();
+outerFunction1();
 
 // Accessing global variable outside the functions
 console.log("Global Scope:", globalVariable);

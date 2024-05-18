@@ -27,18 +27,23 @@ let a = 5;
 let b = 7;
 console.log(`The sum of ${a} and ${b} is ${a + b}`); // Output: "The sum of 5 and 7 is 12"
 
+
+
+//NOTE - this is greate example
 // 4. Tagged Templates
 console.log("\n4. Tagged Templates:");
 
 // Tagged templates allow custom processing of template literals by a tag function
 function tag(strings, ...values) {
-    console.log("Strings:", strings);
-    console.log("Values:", values);
-    return "Processed string";
+  console.log("Strings:", strings);
+  console.log("Values:", values);
+  return "Processed string";
 }
 
-let taggedResult = tag`The result is ${a + b}`;
+let taggedResult = tag`The result is ${a + b} for sure and other is ${90 * 56}`;
 console.log("Tagged Result:", taggedResult); // Output: "Processed string"
+
+// ----------------------------------------------------------------------------
 
 // 5. Escaping Backticks and Dollar Signs
 console.log("\n5. Escaping Backticks and Dollar Signs:");
