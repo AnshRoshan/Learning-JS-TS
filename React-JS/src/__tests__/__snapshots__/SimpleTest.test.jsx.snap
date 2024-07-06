@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Check if the Vitest is working > Snapshot testing : Simpletest 1`] = `
+<div>
+  <div>
+    <h1>
+      Simple Test
+    </h1>
+    <p>
+      This is a simple test component
+    </p>
+    <div>
+      <p>
+        Username: 
+        @ansh
+      </p>
+      <p>
+        Email: 
+        anshroshan@gmail.com
+      </p>
+      <p>
+        Age: 
+        22
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Check if the Vitest is working > should render the component with text 1`] = `
+<div>
+  <div>
+    <h1>
+      Simple Test
+    </h1>
+    <p>
+      This is a simple test component
+    </p>
+    <div>
+      <p>
+        Username: 
+        @ansh
+      </p>
+      <p>
+        Email: 
+        anshroshan@gmail.com
+      </p>
+      <p>
+        Age: 
+        22
+      </p>
+    </div>
+  </div>
+</div>
+`;

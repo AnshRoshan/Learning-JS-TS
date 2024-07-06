@@ -11,6 +11,7 @@ import RenderDynamic from './Components/RenderDynamic'
 import UseEffectHooks from './Components/UseEffectHooks'
 import { UserContext } from './utils/context/UserContext.js'
 import { Outlet } from 'react-router-dom'
+import SimpleTest from './Components/SimpleTest.jsx'
 
 function App() {
 	const list = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
@@ -91,7 +92,9 @@ function App() {
 					</>
 				)}
 			/>
-			<Outlet />
+			<Props title={'Routing'} Component={() => <Outlet />} />
+			{/* <Outlet /> */}
+			<Props title={'Vitest Components'} Component={SimpleTest} />
 		</div>
 	)
 }
