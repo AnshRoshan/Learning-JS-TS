@@ -1,9 +1,8 @@
-import { getClient } from "../../util"
+import { getClient, sql } from '../../util'
 
 export async function createTodos() {
-  const client = await getClient()
-
-  const createTodosQuery = `
+    const client = await getClient()
+    const createTodosQuery = `
       CREATE TABLE todos (
         id SERIAL PRIMARY KEY,
         title TEXT NOT NULL,
@@ -12,7 +11,9 @@ export async function createTodos() {
         done BOOLEAN DEFAULT FALSE
       );`
 
-  console.log('Todos table creation is successfully')
-  const result = await client.query(createTodosQuery)
-  console.log(result)
+    console.log('Todos table creation is successfully')
+    // const result = await client.query(createTodosQuery)
+
+    const result = await sql`${createTodosQuery}`
+    console.log(result)
 }

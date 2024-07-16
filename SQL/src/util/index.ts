@@ -1,3 +1,3 @@
-import { getClient } from './pgutil';
-
-export { getClient }
+import { getClient } from './pgutil'
+import sql from './prisma'
+export { getClient, sql }

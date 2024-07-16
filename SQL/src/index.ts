@@ -1,5 +1,6 @@
-import { createTodos, insertUsers, createUsers } from "./db";
+import { createTodos, insertUsers, createUsers } from './db'
 
 createTodos()
 createUsers()
-insertUsers({ email: 'ansh23@gmail.com', password: 'secureps' })
+insertUsers({ email: 'ansh@test.com', password: 'securepassword' })
+insertUsers({ email: 'anshroshan@test.com', password: 'superSecurePassword' })
