@@ -1,0 +1,15 @@
+# Development services only. Ports are restricted to the local machine.
+services:
+  mongo:
+    image: mongo:8.0
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - auth-mongo:/data/db
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "127.0.0.1:1025:1025"
+      - "127.0.0.1:8025:8025"
+volumes:
+  auth-mongo:

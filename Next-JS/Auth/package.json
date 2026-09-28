@@ -1,0 +1,38 @@
+{
+  "name": "learning-js-ts-auth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run tests/security.test.ts tests/mailer.test.ts tests/requests.test.ts",
+    "test:integration": "vitest run tests/auth.integration.test.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2",
+    "next": "^16.3.6",
+    "nodemailer": "^10.0.12",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.6.3",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/smtp-server": "^3.5.13",
+    "mongodb-memory-server": "^11.3.0",
+    "smtp-server": "^3.19.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
